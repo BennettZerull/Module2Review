@@ -30,6 +30,18 @@ namespace Student_Grade_Calculator
             Students.Add(student3.name);
             Students.Add(student4.name);
             //Step Six: I populated the list with students
+            
+            student1.AddGrade(97.2);
+            student1.AddGrade(95.0, 98.4, 90.7, 96.9);
+            student2.AddGrade(100.0);
+            student2.AddGrade(100.0, 100.0, 100.0, 100.0);
+            student3.AddGrade(48.5);
+            student3.AddGrade(52.6, 63.4, 44.3, 0.0);
+            student4.AddGrade(86.4);
+            student4.AddGrade(89.0, 82.8, 87.6, 90.2);
+            //Step Seven: I called the method to add grades to the students
+            
+            
         }
     }
 }

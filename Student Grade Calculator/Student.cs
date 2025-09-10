@@ -33,4 +33,8 @@ public class Student
         return grades.Average();
     }
     //Step Three: I created methods in the student class
+    public void AddGrade(double grade, double d, double d1, double d2)
+    {
+        throw new NotImplementedException();
+    }
 }
