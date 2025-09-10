@@ -8,7 +8,7 @@ namespace Student_Grade_Calculator
     {
         static void Main(string[] args)
         {
-            var students = new List<Student>();
+            List<string> Students = new List<string>();
             //Step Four: I created a list for students in the main method
             Student student1 = new Student();
             Student student2 = new Student();
@@ -24,6 +24,12 @@ namespace Student_Grade_Calculator
             student4.name = "Luigi Brother";
             student4.id = 004;
             //Step Five: I created 4 instances of students
+            
+            Students.Add(student1.name);
+            Students.Add(student2.name);
+            Students.Add(student3.name);
+            Students.Add(student4.name);
+            //Step Six: I populated the list with students
         }
     }
 }
