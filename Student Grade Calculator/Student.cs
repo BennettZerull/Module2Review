@@ -32,5 +32,5 @@ public class Student
             }
         return grades.Average();
     }
-    //Step 3: I created methods in the student class
+    //Step Three: I created methods in the student class
 }
