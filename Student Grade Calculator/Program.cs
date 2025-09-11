@@ -49,6 +49,23 @@ namespace Student_Grade_Calculator
                     Console.Write($" {grade} \n");
                 }
             }
+            //Step Eight:I chose a foreach loop to list the students information 
+            
+            Course course1 = new Course();
+            Course course2 = new Course();
+
+            course1.Name = "English";
+            course1.Code = "101";
+            course2.Name = "Mathematics";
+            course2.Code = "101";
+            
+            course1.EnrolledStudents.Add(student1);
+            course1.EnrolledStudents.Add(student2);
+            course2.EnrolledStudents.Add(student3);
+            course2.EnrolledStudents.Add(student4);
+            
+            course1.DisplayCourseInfo();
+            course2.DisplayCourseInfo();
         }
     }
-}//Step Eight:I chose a foreach loop to list the students information 
+}//BONUS: I created courses and enrolled students in them
