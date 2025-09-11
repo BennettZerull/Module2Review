@@ -4,31 +4,31 @@ using System.Collections.Generic;
 //Step One: I created the console application to calculate students grades.
 namespace Student_Grade_Calculator
 {
-    public class Program
+    public static class Program
     {
         static void Main(string[] args)
         {
-            List<string> Students = new List<string>();
+            List<Student> students = new List<Student>();
             //Step Four: I created a list for students in the main method
             Student student1 = new Student();
             Student student2 = new Student();
             Student student3 = new Student();
             Student student4 = new Student();
             
-            student1.name = "Bennett Zerull";
-            student1.id = 001;
-            student2.name = "Wedge Mydoggo";
-            student2.id = 002;
-            student3.name = "Mario Brother";
-            student3.id = 003;
-            student4.name = "Luigi Brother";
-            student4.id = 004;
+            student1.Name = "Bennett Zerull";
+            student1.Id = 1001;
+            student2.Name = "Wedge Zerull";
+            student2.Id = 1002;
+            student3.Name = "Mario Brothers";
+            student3.Id = 1003;
+            student4.Name = "Luigi Brothers";
+            student4.Id = 1004;
             //Step Five: I created 4 instances of students
             
-            Students.Add(student1.name);
-            Students.Add(student2.name);
-            Students.Add(student3.name);
-            Students.Add(student4.name);
+            students.Add(student1);
+            students.Add(student2);
+            students.Add(student3);
+            students.Add(student4);
             //Step Six: I populated the list with students
             
             student1.AddGrade(97.2);
@@ -40,8 +40,15 @@ namespace Student_Grade_Calculator
             student4.AddGrade(86.4);
             student4.AddGrade(89.0, 82.8, 87.6, 90.2);
             //Step Seven: I called the method to add grades to the students
-            
-            
+
+            foreach (Student student in students)
+            {
+                Console.Write($"Name: {student.Name} \tID: {student.Id} \tAverage Grade: {Math.Round(student.Grades.Average(), 1)} \nGrades:\n");
+                foreach (double grade in student.Grades)
+                {
+                    Console.Write($" {grade} \n");
+                }
+            }
         }
     }
-}
+}//Step Eight:I chose a foreach loop to list the students information 
